@@ -50,10 +50,10 @@
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:contentDescription="@string/f_x_y_0_0_block"
             android:onClick="dropIn"
@@ -63,10 +63,10 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="12dp"
             android:layout_marginTop="5dp"
             android:contentDescription="@string/f_x_y_0_1_block"
             android:onClick="dropIn"
@@ -76,10 +76,10 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:contentDescription="@string/f_x_y_0_2_block"
             android:onClick="dropIn"
@@ -89,11 +89,11 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
             android:contentDescription="@string/f_x_y_1_0_block"
             android:onClick="dropIn"
             android:tag="3"
@@ -102,11 +102,11 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
             android:contentDescription="@string/f_x_y_1_1_block"
             android:onClick="dropIn"
             android:tag="4"
@@ -115,11 +115,11 @@
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
             android:contentDescription="@string/f_x_y_1_2_block"
             android:onClick="dropIn"
             android:tag="5"
@@ -128,11 +128,11 @@
 
         <ImageView
             android:id="@+id/imageView7"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
             android:contentDescription="@string/f_x_y_2_0_block"
             android:onClick="dropIn"
             android:tag="6"
@@ -141,11 +141,11 @@
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
             android:contentDescription="@string/f_x_y_2_1_block"
             android:onClick="dropIn"
             android:tag="7"
@@ -154,11 +154,11 @@
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
             android:contentDescription="@string/f_x_y_2_2_block"
             android:onClick="dropIn"
             android:tag="8"
