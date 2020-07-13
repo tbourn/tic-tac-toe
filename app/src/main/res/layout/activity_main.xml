@@ -7,10 +7,9 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/winnerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         android:textAlignment="center"
         android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
@@ -18,20 +17,23 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312" />
+        app:layout_constraintVertical_bias="0.312"
+        tools:visibility="invisible" />
 
     <Button
         android:id="@+id/playAgainButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="playAgain"
         android:text="Play Again"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/winnerTextView"
         app:layout_constraintVertical_bias="0.409" />
 
     <androidx.gridlayout.widget.GridLayout

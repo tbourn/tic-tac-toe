@@ -1,11 +1,17 @@
 package com.thomas.tictactoe;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+
+import androidx.gridlayout.widget.GridLayout;
+
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +34,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void playAgain(View view) {
+        Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
+        TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
+
+        playAgainButton.setVisibility(View.INVISIBLE);
+        winnerTextView.setVisibility(View.INVISIBLE);
+
+        GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
+
+        for (int i = 0; i < gridLayout.getChildCount(); i++) {
+            ImageView counter = (ImageView) gridLayout.getChildAt(i);
+            counter.setImageDrawable(null);
+        }
+
+        Arrays.fill(gameState, 2);
+
+        activePlayer = 0;
+
+        gameActive = true;
+    }
+
     public void dropIn(View view) {
 
         ImageView counter = (ImageView) view;
@@ -35,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         int tappedCounter = Integer.parseInt(counter.getTag().toString());
 
         if (gameState[tappedCounter] == 2 && gameActive) {
+
             gameState[tappedCounter] = activePlayer;
 
             counter.setTranslationY(-1500);
@@ -58,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
                     gameActive = false;
 
-                    String winner = "";
+                    String winner;
 
                     if (activePlayer == 1) {
                         winner = "Yellow";
@@ -66,7 +94,12 @@ public class MainActivity extends AppCompatActivity {
                         winner = "Red";
                     }
 
-                    Toast.makeText(this, winner + " has won!", Toast.LENGTH_SHORT).show();
+                    Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
+                    TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
+
+                    winnerTextView.setText(winner + " has won!");
+                    playAgainButton.setVisibility(View.VISIBLE);
+                    winnerTextView.setVisibility(View.VISIBLE);
                 }
             }
         }
