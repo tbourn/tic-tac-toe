@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void playAgain(View view) {
-        Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
+    public void newGame(View view) {
+//        Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
         TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
 
-        playAgainButton.setVisibility(View.INVISIBLE);
+//        playAgainButton.setVisibility(View.INVISIBLE);
         winnerTextView.setVisibility(View.INVISIBLE);
 
         GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
@@ -94,11 +94,11 @@ public class MainActivity extends AppCompatActivity {
                         winner = "Red";
                     }
 
-                    Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
+//                    Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
                     TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
 
                     winnerTextView.setText(winner + " has won!");
-                    playAgainButton.setVisibility(View.VISIBLE);
+//                    playAgainButton.setVisibility(View.VISIBLE);
                     winnerTextView.setVisibility(View.VISIBLE);
                 }
             }
