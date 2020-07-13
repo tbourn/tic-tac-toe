@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Tic Tac Toe</string>
+    <string name="play_again">Play Again</string>
+    <string name="f_x_y_0_0_block">f(x,y) = (0,0) block</string>
+    <string name="f_x_y_0_1_block">f(x,y) = (0,1) block</string>
+    <string name="f_x_y_0_2_block">f(x,y) = (0,2) block</string>
+    <string name="f_x_y_1_0_block">f(x,y) = (1,0) block</string>
+    <string name="f_x_y_1_1_block">f(x,y) = (1,1) block</string>
+    <string name="f_x_y_1_2_block">f(x,y) = (1,2) block</string>
+    <string name="f_x_y_2_0_block">f(x,y) = (2,0) block</string>
+    <string name="f_x_y_2_1_block">f(x,y) = (2,1) block</string>
+    <string name="f_x_y_2_2_block">f(x,y) = (2,2) block</string>
 </resources>
