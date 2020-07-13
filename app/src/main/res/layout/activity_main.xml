@@ -80,7 +80,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:onClick="dropIn"
-            android:tag="3"
+            android:tag="2"
             app:layout_column="2"
             app:layout_row="0" />
 
