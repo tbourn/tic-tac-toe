@@ -2,7 +2,6 @@ package com.thomas.tictactoe;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.gridlayout.widget.GridLayout;
 
@@ -35,10 +34,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void newGame(View view) {
-//        Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
-        TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
 
-//        playAgainButton.setVisibility(View.INVISIBLE);
+        TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
         winnerTextView.setVisibility(View.INVISIBLE);
 
         GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
@@ -94,11 +91,8 @@ public class MainActivity extends AppCompatActivity {
                         winner = "Red";
                     }
 
-//                    Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
                     TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
-
                     winnerTextView.setText(winner + " has won!");
-//                    playAgainButton.setVisibility(View.VISIBLE);
                     winnerTextView.setVisibility(View.VISIBLE);
                 }
             }
